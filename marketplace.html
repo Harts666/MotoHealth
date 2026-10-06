@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MotoHealth - Marketplace</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/jpeg" href="image/title.png">
+</head>
+<body>
+
+  <header>
+    <nav class="header-container">
+        <div class="logo">
+            <a href="index.html"><img src="image/logo.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="marketplace.html" class="active">Marketplace</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+
+      <div class="header-actions">
+      <a href="index.html" class="icon-btn">🛒</a>
+      <a href="index.html" class="icon-btn">👤</a>
+    </div>
+    </nav>
+  </header>
+
+  <main class="section-container">
+  <div class="layout-container">
+  <aside class="sidebar">
+    <div class="filter-group">
+      <h3 class="filter-title">Kategori</h3>
+      <ul class="category-menu">
+        <li class="active"><span class="icon">📑</span> Semua Produk</li>
+        <li><span class="icon">⚙️</span> Spare Part</li>
+        <li><span class="icon">👜</span> Aksesori</li>
+        <li><span class="icon">🛢️</span> Oli dan Perawatan</li>
+        <li><span class="icon">⚡</span> Kelistrikan</li>
+        <li><span class="icon">🛞</span> Ban & Velg</li>
+        <li><span class="icon">🛵</span> Body Part</li>
+      </ul>
+    </div>
+
+    <div class="filter-group">
+      <h3 class="filter-title">Merek</h3>
+      <div class="checkbox-list">
+        <label class="checkbox-item">
+          <input type="checkbox" name="merek" value="yamaha"> Yamaha
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" name="merek" value="honda"> Honda
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" name="merek" value="kawasaki"> Kawasaki
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" name="merek" value="Ducati"> Ducati
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" name="merek" value="lainnya"> Lainnya
+        </label>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <h3 class="filter-title">Rentang Harga</h3>
+      <div class="price-inputs">
+        <input type="text" placeholder="Rp. 0" class="price-input">
+        <input type="text" placeholder="Rp. 3.000.000" class="price-input">
+      </div>
+      <button type="button" class="btn-filter">Terapkan Filter</button>
+    </div>
+
+  </aside>
+  <div class="main-content">
+    <h1 class="page-title">Semua Produk</h1>
+    <div class="top-bar">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" placeholder="Cari Produk...">
+      </div>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-img-placeholder">
+          <img src="image/ecu.webp" alt="Ecu Aracer Super X">
+        </div>
+        <h4 class="product-name">Ecu Aracer Super X</h4>
+        <p class="product-price">Rp. 12.000.000</p>
+        <button class="btn-add-cart">
+          Tambah 🛒
+        </button>
+      </div>
+      <div class="product-card">
+        <div class="product-img-placeholder">
+          <img src="image/busi.webp" alt="Busi NGK Iridium">
+        </div>
+        <h4 class="product-name">Busi Denso Iridium</h4>
+        <p class="product-price">Rp. 200.000</p>
+        <button class="btn-add-cart">
+          Tambah 🛒
+        </button>
+      </div>
+      <div class="product-card">
+        <div class="product-img-placeholder">
+          <img src="image/baut.webp" alt="Baut Titanium">
+        </div>
+        <h4 class="product-name">Baut Titanium Fullset</h4>
+        <p class="product-price">Rp. 2.000.000</p>
+        <button class="btn-add-cart">
+          Tambah 🛒
+        </button>
+      </div>
+      <div class="product-card">
+        <div class="product-img-placeholder">
+          <img src="image/oli.webp" alt="Oli Motor">
+        </div>
+        <h4 class="product-name">Oli Motul</h4>
+        <p class="product-price">Rp. 100.000</p>
+        <button class="btn-add-cart">
+          Tambah 🛒
+        </button>
+      </div>
+      <div class="product-card">
+        <div class="product-img-placeholder">
+          <img src="image/ban.webp" alt="Ban Motor">
+        </div>
+        <h4 class="product-name">Ban Pirelli</h4>
+        <p class="product-price">Rp. 500.000</p>
+        <button class="btn-add-cart">
+          Tambah 🛒
+        </button>
+      </div>
+      <div class="product-card">
+        <div class="product-img-placeholder">
+          <img src="image/body.webp" alt="Body Part Motor">
+        </div>
+        <h4 class="product-name">Body Part Cbr250rr</h4>
+        <p class="product-price">Rp. 5.000.000</p>
+        <button class="btn-add-cart">
+          Tambah 🛒
+        </button>
+      </div>
+      <div class="product-card">
+        <div class="product-img-placeholder">
+          <img src="image/knalpot.webp" alt="Knalpot Motor">
+        </div>
+        <h4 class="product-name">Knalpot Arrow</h4>
+        <p class="product-price">Rp. 15.000.000</p>
+        <button class="btn-add-cart">
+          Tambah 🛒
+        </button>
+      </div>
+            <div class="product-card">
+        <div class="product-img-placeholder">
+          <img src="image/velg.webp" alt="Velg Motor">
+        </div>
+        <h4 class="product-name">Velg Vnd</h4>
+        <p class="product-price">Rp. 1.800.000</p>
+        <button class="btn-add-cart">
+          Tambah 🛒
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2026 MotoHealth. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

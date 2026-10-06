@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MotoHealth - Service</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/jpeg" href="image/title.png">
+</head>
+<body>
+
+  <header>
+    <nav class="header-container">
+        <div class="logo">
+            <a href="index.html"><img src="image/logo.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="marketplace.html">Marketplace</a></li>
+          <li><a href="service.html" class="active">Service</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+
+        <div class="header-actions">
+      <a href="index.html" class="icon-btn">🛒</a>
+      <a href="index.html" class="icon-btn">👤</a>
+    </div>
+    </nav>
+  </header>
+
+  <main class="section-container">
+  <section class="booking-form-section">
+    <h1 class="form-title">Booking Servis</h1>
+    <p class="form-subtitle">Isi data berikut untuk melakukan pemesanan layanan servis atau modifikasi motor</p>
+
+    <form class="booking-form">
+      <div class="form-grid">
+        
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" placeholder="Masukan nama lengkap">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="namaemail@gmail.com">
+        </div>
+
+        <div class="form-group">
+          <label for="whatsapp">Nomor WhatsApp</label>
+          <input type="tel" id="whatsapp" placeholder="080xxxxxxxxxxxxxxx">
+        </div>
+
+        <div class="form-group">
+          <label for="layanan">Jenis Layanan</label>
+          <select id="layanan">
+            <option value="" disabled selected>Pilih Jenis layanan</option>
+            <option value="servis-rutin">Servis Rutin</option>
+            <option value="modifikasi">Modifikasi Motor</option>
+            <option value="ganti-oli">Ganti Oli & Perawatan</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="bengkel">Pilih Bengkel Rekanan</label>
+          <select id="bengkel">
+            <option value="" disabled selected>Pilih lokasi bengkel</option>
+            <option value="MalamToSubuh-jakbar">MalamToSubuh Jakarta Barat</option>
+            <option value="yamaha-jaksel">Yamaha Jakarta Selatan</option>
+            <option value="kawasaki-jakpus">Kawasaki Jakarta Pusat</option>
+            <option value="suzuki-jaktim">Suzuki Jakarta Timur</option>
+            <option value="ducati-jakut">Ducati Jakarta Utara</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Tanggal & Waktu</label>
+          <div class="datetime-wrapper">
+            <input type="date" class="input-date">
+            <input type="time" class="input-time">
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="catatan">Catatan Tambahan (Opsional)</label>
+          <textarea id="catatan" rows="3" placeholder="Tulis catatan atau permintaan khusus"></textarea>
+        </div>
+
+      </div>
+
+      <button type="submit" class="btn-submit">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+        Kirim Pesanan
+      </button>
+    </form>
+  </section>
+
+  <aside class="order-summary-section">
+    <div class="summary-card">
+      <div class="summary-header">
+        <h3>Ringkasan Pesanan</h3>
+      </div>
+      
+      <div class="summary-body">
+        <div class="summary-content">
+          <div class="summary-image-placeholder">
+          </div>
+          <div class="summary-details">
+            <h2 class="order-code">MH103</h2>
+            
+            <div class="detail-item">
+              <span class="detail-label">Jenis Layanan</span>
+              <span class="detail-value">Servis Rutin</span>
+            </div>
+
+            <div class="detail-item">
+              <span class="detail-label">Bengkel</span>
+              <span class="detail-value">Honda Jakarta Barat</span>
+            </div>
+
+            <div class="detail-item">
+              <span class="detail-label">Tanggal & Waktu</span>
+              <span class="detail-value">23 Oktober 2026<br>Pkl.18.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary-footer">
+          Estimasi Biaya
+        </div>
+      </div>
+    </div>
+  </aside>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2026 MotoHealth. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
